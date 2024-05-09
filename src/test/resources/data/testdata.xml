@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testdata>
+	<testcase name="InvalidLogin">
+        <Username>invalid_username</Username>
+        <Password>invalidPassword</Password>
+	</testcase>
+	<testcase name="ValidLogin">
+        <Username>standard_user</Username>
+		<Password>secret_sauce</Password>
+	</testcase>
+	<testcase name="googleSearch">
+        <Url>https://www.google.com</Url>
+        <SearchTerm>Appium</SearchTerm>
+	</testcase>
+	<testcase name="LogOut">
+        <Username>standard_user</Username>
+        <Password>secret_sauce</Password>
+	</testcase>
+</testdata>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="com.automate.listeners.Listeners"/>
+        <listener class-name="com.automate.listeners.AnnotationTransformer"/>
+    </listeners>
+    <test name="Test_NativeApp-Pixel4_Emulator">
+        <parameter name="emulator" value="yes"/>
+        <parameter name="platformName" value="android"/>
+        <parameter name="udid" value="emulator-5554"/>
+        <parameter name="deviceName" value="Pixel_4_API_30"/>
+        <parameter name="systemPort" value="7878"/>
+        <classes>
+            <class name="com.tests.LoginTest"></class>
+            <class name="com.tests.WebAppTest"/>
+        </classes>
+    </test> 
+
+    <test name="Test_WebBrowser-Pixel4_Emulator">
+        <parameter name="emulator" value="yes"/>
+        <parameter name="platformName" value="android_web"/>
+        <parameter name="udid" value="emulator-5554"/>
+        <parameter name="deviceName" value="Pixel_4_API_30"/>
+        <parameter name="systemPort" value="7878"/>
+        <parameter name="chromeDriverPort" value="8787"/>
+        <classes>
+            <class name="com.tests.GoogleTest"/>
+        </classes>
+    </test>
+</suite>
